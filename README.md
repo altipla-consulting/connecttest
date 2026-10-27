@@ -16,6 +16,7 @@ go get github.com/altipla-consulting/connecttest
 ## Usage
 
 ```go
+reply, err := client.Call(ctx, request)
 connecttest.RequireError(t, err, connect.CodeFailedPrecondition, "foo bar baz error message")
 ```
 
